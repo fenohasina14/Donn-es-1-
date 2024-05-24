@@ -111,3 +111,5 @@ SELECT SUM(i.price) AS total_gagne
 FROM "order" o
 JOIN item i ON o.item_id = i.item_id
 WHERE EXTRACT(YEAR FROM o.payment_date) = EXTRACT(YEAR FROM CURRENT_DATE);
+
+-- STD23090, STD23027, STD23081, STD23046, STD23058
